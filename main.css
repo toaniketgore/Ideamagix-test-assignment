@@ -1,0 +1,870 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-family: 'Poppins', 'Times New Roman', Times, serif;
+}
+
+/* top navbar */
+/* Style for the top navbar */
+.top-navbar {
+
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* Make it full width */
+    z-index: 1000;
+    /* Set a high z-index to ensure it's above other content */
+}
+
+.top-navbar {
+    position: fixed;
+}
+
+#main-blue-navbar {
+    position: fixed;
+    top: 89px;
+}
+
+.top-navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.top-navbar ul img {
+    height: 50px;
+    width: 100px;
+}
+
+.top-navbar li {
+    margin: 0 20px;
+    padding: 1rem;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center align items vertically */
+    text-align: center;
+}
+
+.top-navbar ul li:hover {
+    border-bottom: 2px solid #3fb7fb;
+}
+
+.top-navbar i {
+    margin-bottom: 0.5rem;
+    /* Add spacing between icon and text */
+}
+
+.top-navbar a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.886);
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+.top-navbar .dropdown a img {
+    height: 30px;
+    width: 40px;
+}
+
+.top-navbar a:hover {
+    color: blue;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    border: 1px solid #ccc;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+#main-blue-navbar {
+    background-color: #3fb7fb;
+}
+
+#main-blue-navbar li {
+    padding: 0.7rem;
+}
+
+.search-li input[type="text"]::placeholder {
+    color: #fff;
+    /* Change the placeholder text color to white */
+}
+
+.search-li {
+    display: flex;
+    align-items: center;
+    background-color: #107df7;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search-li input[type="text"] {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.search-li button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+.knee-div {
+    padding-top: 159px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: #fff;
+    border: 2px solid black;
+    height: 250px;
+    width: 100%;
+    background-image: url("kneeBackround.jpg");
+}
+
+#knee-para {
+    padding: 0.2rem 2rem;
+}
+
+.knee-div p {
+    padding: 0.5rem 2rem;
+}
+
+.knee-div h2 {
+    font-size: 2rem;
+    padding-left: 26px;
+}
+
+.knee-div button {
+    margin: 1rem 2rem;
+    display: block;
+    background-color: #3fb7fb;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    line-height: 39px;
+    padding: 0 16px;
+    width: 163px;
+    color: #fff;
+    font-weight: 550;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+
+/* navbar of sections */
+
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* Make it full width */
+    z-index: 1000;
+    /* Set a high z-index to ensure it's above other content */
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 20px;
+    padding: 1rem;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.navbar ul li:hover {
+    border-bottom: 2px solid #3fb7fb;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.886);
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: blue;
+}
+
+
+/* global classes */
+
+.nav-div-title {
+    padding: 1rem 0.5rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* for the alignment of text inside div */
+#para {
+    line-height: 1.5;
+    padding: 0.5rem;
+    text-align: start;
+}
+
+
+/* overview section styles */
+#overview .content,
+{
+width: 50%;
+}
+
+
+#overview .image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+#overview .image img {
+    padding: 0.5rem;
+    height: 80%;
+    width: 100%;
+}
+
+
+/* to make list item bullet point blue */
+
+#eligibility .content ul {
+    /* list-style: none; */
+}
+
+#eligibility .content ul li::before {
+    /* content: '\2022'; */
+    /* Use a bullet character (•) or any other desired character */
+    /* color: #089df0; */
+    /* Change the color of the custom bullet */
+    /* display: inline-block; */
+    /* width: 1em; */
+    /* margin-left: -1em; */
+    /* Adjust the margin to position the bullet properly */
+}
+
+
+/* alignement of sections */
+#overview,
+#eligibility,
+#preparation,
+#about-treatment,
+#post-treatment-care,
+#recovery-tips,
+#faqs,
+#patient-stories {
+    width: 80%;
+    padding: 80px;
+    display: flex;
+    height: 400px;
+    border-bottom: 2px dashed #089df0;
+    margin: 1rem 3rem;
+
+}
+
+#eligibility,
+#preparation,
+#about-treatment,
+#post-treatment-care,
+#recovery-tips,
+#faqs {
+    width: 55% !important;
+}
+
+
+/* faq-contaniers css */
+.faq-container {
+    background-color: #fff;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
+    padding: 20px;
+    width: 60%;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 15px;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer {
+    padding: 15px;
+    display: none;
+}
+
+.faq-question {
+    padding: 15px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+
+.faq-question i {
+    margin-right: 1rem;
+    color: #089df0;
+    /* Add some space between the icon and the question text */
+}
+
+/* form styling */
+.nonScrollableContainer {
+    width: 100%;
+    /* Full width */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.form {
+    border-radius: 8px;
+    padding: 12px;
+    height: 480px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    position: sticky;
+    left: 70%;
+    top: 20vh;
+}
+
+
+.mid-nav-section {
+    overflow: hidden;
+}
+
+.form input,
+.form textarea {
+    display: block;
+    line-height: 1.34;
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 330px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    margin: 8px auto;
+}
+
+.form button {
+    display: block;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 364px;
+    color: #fff;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.form h3 {
+    color: #1877f2;
+}
+
+.form input:focus {
+    border-color: #1b74e4;
+    box-shadow: 0 0 0 2px #e7f3ff;
+    caret-color: #1b74e4;
+    outline: none;
+}
+
+.form span {
+    line-height: 1.5;
+}
+
+
+/* doctors card */
+.doctors-card {
+    background-color: #e9f2f7;
+}
+
+.item {
+    border: 2px solid black;
+}
+
+.item img {
+    height: 200px;
+    width: 200px;
+}
+
+.slider {
+    background-color: rgba(77, 188, 252, 255);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 312px;
+
+}
+
+.slider h2 {
+    font-size: 2.2rem;
+}
+
+.slider p {
+    margin-top: 0.5rem;
+    ;
+}
+
+.slider .contact {
+    display: flex;
+    margin: 1rem;
+}
+
+.slider button {
+    display: block;
+    background-color: #107df7;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    line-height: 39px;
+    padding: 0 16px;
+    width: 163px;
+    color: #fff;
+    font-weight: 550;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+
+/* footer seciton */
+
+/* Your existing styles go here */
+
+/* Footer styles */
+footer {
+    background-color: #0b2432;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 2rem 0rem;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding-top: 1rem;
+}
+
+.footer-column ul li {
+    margin-bottom: 15px;
+}
+
+.footer-column ul li i {
+    color: #178ecf;
+    padding-right: 0.5rem;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* below footer */
+/* 
+.second-container img{
+    height:200px;
+    width:30%;
+}
+
+.second-container .content{
+    width:40%;
+    padding:2rem;
+}
+.second-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.social{
+    width:30%;
+    margin-left:20px;
+}
+.social ul {
+    display: flex;
+}
+.social ul li{
+    padding-right: 1rem;
+    list-style: none;
+}
+.social ul li a{
+    color:#fff;
+} */
+
+
+.second-container {
+    display: flex;
+    justify-content: space-between;
+    /* Equal space between the three sections */
+    align-items: center;
+    width: 100%;
+    /* To ensure they take up the entire width */
+    padding: 2rem;
+}
+
+.second-container img {
+    height: 200px;
+    width: 30%;
+    max-width: 100%;
+    /* Make sure the image doesn't exceed its container */
+}
+
+.second-container .content {
+    width: 30%;
+    padding: 2rem;
+    background-color: #0b2432;
+    /* Adding background color for better separation */
+}
+
+.social {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center the items vertically */
+    color: #fff;
+}
+
+.social h2,
+.social h3,
+.social p {
+    text-align: center;
+    /* Center text within the .social div */
+    margin: 10px 0;
+    /* Add some spacing between text */
+}
+
+.social ul {
+    display: flex;
+}
+
+.social ul li {
+    list-style: none;
+    padding-right: 0.5rem;
+
+}
+
+.social ul li a {
+    color: white;
+}
+
+.social h3 {
+    padding-left: 1.2rem;
+    margin-top: 2rem;
+}
+
+.social p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: rgba(77, 188, 252, 255);
+}
+
+
+/* footer line */
+
+.copyright {
+    width: 100%;
+
+    background-color: #089df0;
+    /* Take up the full width */
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+.terms-and-privacy {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.terms-and-privacy a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.terms-and-privacy a:hover {
+    text-decoration: underline;
+}
+
+/* Equal Heights for OwlCarousel 2 */
+
+.owl-theme .owl-nav {
+    display: none !important;
+}
+
+.owl-dot {
+    border: none;
+}
+
+.owl-carousel {
+    .owl-stage {
+        display: flex;
+    }
+
+    .owl-item {
+        display: flex;
+        flex: 1 0 auto;
+    }
+
+    .caption {
+        display: flex;
+        flex: 1 0 auto;
+        flex-direction: column;
+    }
+
+    .flex-text {
+        flex-grow: 1
+    }
+
+    .thumbnail {
+        display: flex;
+        flex-direction: column;
+        margin: 0 15px;
+    }
+
+    .owl-theme {
+        width: 500px;
+    }
+}
+
+
+/* Demo Styles */
+.nav-div-title span {
+    color: #178ecf
+}
+
+.container-fluid {
+    width: 98% !important;
+    overflow: hidden !important;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.thumbnail.item {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    height: 400px;
+    margin-right: 20px;
+    /* Spacing between cards */
+    width: 400px;
+    /* Max width for each card */
+}
+
+/* Card Image */
+.blog-thumb-img img {
+    width: 80%;
+    height: 90%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* Card Caption */
+.caption {
+    padding: 15px;
+    margin-top: -30px;
+}
+
+/* Card Heading */
+.caption h4 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.flex-text.text-muted {
+    color: #888;
+    font-size: 14px;
+}
+
+/* Button */
+.btn.btn-primary.btn-block {
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.navbar-brand {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    margin-left: 0px !important;
+}
+
+
+
+/* patient stoeis */
+
+/* patient stories testimonials */
+
+#patient-stories {
+    display: flex;
+    flex-direction: column;
+}
+
+#patient-stories .card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#patient-stories .card-container .card {
+    width: 315px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    ;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+
+}
+
+#patient-stories .card-container .card .testimonial-image img {
+    height: 200px;
+    width: auto;
+    padding: 0.5rem;
+}
+
+.testimonial-content p {
+    padding: 1rem;
+}
+
+. .testimonial-icon {
+    float: right;
+}
+
+#patient-stories .card-container .card .head-part p,
+.testimonial-icon {
+    padding: 1rem;
+    color: #312369;
+    font-weight: 500;
+    float: left;
+}
+
+.testimonial-profile {
+    display: flex;
+}
+
+.testimonial-profile .user-information {
+    padding: 0.5rem;
+
+}
+
+.testimonial-profile .user-information .user-name {
+    font-size: 1rem;
+}
+
+.testimonial-profile .user-information .user-location {
+    opacity: 0.8;
+    font-size: 0.8rem;
+}
+
+.testimonial-profile img {
+    padding: 0.5rem;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+#patient-stories {
+    border: none;
+}
+
+.doctors-card .caption h2 i {
+    color: red;
+}
+
+.doctors-card .caption h2 {
+    font-size: 1.2rem;
+}
+
+.hospitals-card .caption p {
+    color: red;
+}
+
+.doctors-card h3 i {
+    color: red;
+}
